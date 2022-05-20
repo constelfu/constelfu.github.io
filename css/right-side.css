@@ -1,0 +1,67 @@
+.right-side__text-box {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+}
+.right-side__text {
+    font-size: 60px;
+}
+.url-holder__form {
+    position: relative;
+}
+
+.url-holder__input {
+    margin-bottom: 20px;
+    height: 25px;
+    width: 85.5%;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid rgba(255, 224, 98, 1);
+    background-color: var(--bg-color);
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: rgba(245, 245, 245, 1);
+    font-family: 'Dongle', sans-serif;
+}
+.url-holder__input::placeholder {
+    color: rgba(245, 245, 245, 1);
+    font-family: 'Dongle', sans-serif;
+}
+.url-holder__button {
+    height: 35px;
+    width: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: var(--pikachu);
+    color: var(--pikachu-dark);
+    position: absolute;
+}
+
+.url-holder__list li {
+    margin-bottom: 10px;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 3px 10px;
+    position: relative;
+}
+
+.url-holder__list li:nth-of-type(n+10) {
+    display: none;
+}
+
+.url-holder__list li button {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    height: 39px;
+    width: 64px;
+    border-radius: 10px;
+    background-color: var(--pikachu);
+    color: var(--pikachu-dark);
+}

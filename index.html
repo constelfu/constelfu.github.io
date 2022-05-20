@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <header class="user-welcome header__bgcolor">
+      <span id="greeting">Hello!</span>
+    </header>
+    <main class="momentum-screen">
+      <div class="left-side">
+        <div class="todo-box">
+          <form id="todo-form">
+            <input
+              class="todo-form__input"
+              type="text"
+              placeholder="오늘 할 일..."
+              required
+              maxlength="30"
+            />
+            <button class="todo-form__btn">
+              <i class="fas fa-check fa-lg"></i>
+            </button>
+          </form>
+          <ul class="to-do__list" id="todo-list"></ul>
+        </div>
+      </div>
+
+      <div class="middle-side middle-div__bgcolor middle-div__bgcolor-border">
+        <div class="login-box">
+          <form class="hidden login-box__form" id="login-form">
+            <input
+              class="login-box__input"
+              required
+              maxlength="15"
+              type="text"
+              placeholder="이름 입력..."
+            />
+            <button><i class="fas fa-sign-in-alt fa-2x"></i></button>
+          </form>
+
+          <form class="hidden logout-form" id="logout-form">
+            <span>LOG OUT</span>
+            <button><i class="fas fa-sign-out-alt fa-2x"></i></button>
+          </form>
+        </div>
+        <div class="date">
+          <span class="date__text">1980년</span>
+        </div>
+        <div class="clock">
+          <span id="clock">00 : 00</span>
+        </div>
+
+        <div class="weather__text" id="weather">
+          <span>위치 정보 필요</span>
+          <span></span>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="hidden right-side__text-box">
+          <span class="right-side__text"> URL Holder </span>
+        </div>
+        <div class="url-holder">
+          <form class="url-holder__form">
+            <input
+              required
+              class="url-holder__input"
+              type="text"
+              placeholder="URL을 등록해주세요..."
+            />
+            <button class="url-holder__button">
+              <i class="fas fa-check fa-lg"></i>
+            </button>
+          </form>
+          <ul class="url-holder__list"></ul>
+        </div>
+      </div>
+    </main>
+    <footer class="quotes-bar quotes-bar__bgcolor">
+      <div id="quotes">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/url-holder.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
